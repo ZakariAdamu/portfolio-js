@@ -10,9 +10,10 @@ const EmailForm = () => {
 			<div>
 				<h5 className="text-xl font-bold text-white my-2">Let's connect</h5>
 				<p className="text-[#ADB7BE] mb-4 max-w-md">
-					I'm currently looking for new opportunities to contribute my skills,
-					learn new skills and grow. Whether you have a question or just want to
-					say hi, my inbox is always open. I'll definitely respond to you!
+					I&apos;m currently looking for new opportunities to contribute my
+					skills, learn new skills and grow. Whether you have a question or just
+					want to say hi, my inbox is always open. I will definitely respond to
+					you!
 				</p>
 				<div className="socials lg:mt-8 flex flex-row mb-10 mt-5">
 					<Link href="https://github.com/ZakariAdamu" target="_blank">
