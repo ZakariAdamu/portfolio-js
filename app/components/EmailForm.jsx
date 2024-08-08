@@ -1,10 +1,51 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import GitHubIcon from "/public/social-icons/logo-github-svgrepo-com.svg";
 import LinkedinIcon from "/public/social-icons/linkedin-logo-svgrepo-com.svg";
 import Image from "next/image";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const EmailForm = () => {
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [confirmEmail, setConfirmEmail] = useState("");
+	const [message, setMessage] = useState("");
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		// your EmailJS serviceID, templateID, and publicKey
+		const serviceID = "service_355gyva";
+		const templateID = "template_jywp96d";
+		const publicKey = "1XNDeVpEWsGouk5fo";
+
+		// create a new object that contains dynamic template params
+		const templateParams = {
+			from_name: name,
+			from_email: email,
+			to_name: "Zakari Adamu",
+			message: message,
+		};
+
+		// send the email using EmailJS
+		emailjs
+			.send(serviceID, templateID, templateParams, publicKey)
+			.then((response) => {
+				// console.log("Email sent successfully", response);
+				toast.success("Email sent successfully! Thank you.");
+				setName("");
+				setEmail("");
+				setConfirmEmail("");
+				setMessage("");
+			})
+			.catch((error) => {
+				console.log("Error sending email", error);
+			});
+	};
+
 	return (
 		<section
 			className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4"
@@ -44,38 +85,57 @@ const EmailForm = () => {
 					</Link>
 				</div>
 			</div>
-			<form action="" className="flex flex-col ">
-				<div className="mb-6">
+			<form onSubmit={handleSubmit} className="flex flex-col ">
+				<ToastContainer className="w-full" />
+				<div className="name-field mb-6">
+					<label
+						htmlFor="name"
+						className="text-white mb-2 block text-sm font-medium"
+					>
+						Name
+					</label>
+					<input
+						className="bg-[#18191E] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						type="text"
+						placeholder="Please enter your name"
+						defaultValue={name}
+						onChange={(e) => setName(e.target.value)}
+						required
+					/>
+				</div>
+				<div className="email-field mb-6">
 					<label
 						htmlFor="email"
 						className="text-white mb-2 block text-sm font-medium"
 					>
-						Your email
+						Email
 					</label>
 					<input
-						type="email"
-						id="email"
-						required
-						placeholder="youremail@email.com"
 						className="bg-[#18191E] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						type="email"
+						placeholder="Please enter your email"
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+						required
 					/>
 				</div>
-				<div className="mb-6">
+				<div className="confirm-email-field mb-6">
 					<label
-						htmlFor="subject"
+						htmlFor="email"
 						className="text-white mb-2 block text-sm font-medium"
 					>
-						Subject
+						Confirm Email
 					</label>
 					<input
-						type="text"
-						id="subject"
-						required
-						placeholder="Email Subject"
 						className="bg-[#18191E] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						type="email"
+						placeholder="Please verify your email"
+						value={confirmEmail}
+						onChange={(e) => setConfirmEmail(e.target.value)}
+						required
 					/>
 				</div>
-				<div className="mb-6">
+				<div className="message-field mb-6">
 					<label
 						htmlFor="message"
 						className="text-white block text-sm mb-2 font-medium"
@@ -83,11 +143,16 @@ const EmailForm = () => {
 						Message
 					</label>
 					<textarea
+						className="bg-[#18191E] border border-[#33353F]
+						placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full
+						p-2"
 						name="message"
-						id="message"
-						className="bg-[#18191E] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2"
-						placeholder="Type your message here..."
-					/>
+						cols="10"
+						rows="8"
+						placeholder="Please enter your message here..."
+						value={message}
+						onChange={(e) => setMessage(e.target.value)}
+					></textarea>
 				</div>
 				<button
 					type="submit"

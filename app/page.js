@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import EmailForm from "./components/EmailForm";
 import Footer from "./components/Footer";
+// import EmailForm2 from "./components/EmailForm2";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 				<About />
 				<Projects />
 				<EmailForm />
+				{/* <EmailForm2 />*/}
 			</div>
 			<Footer />
 		</main>

@@ -10,16 +10,18 @@ const projectsData = [
 		description:
 			"An interactive web application developed using the MERN (MongoDB, Express.js, React, Node.js) stack to incorporate comprehensive CRUD (Create, Read, Update, Delete) functionalities. This full-stack solution seamlessly integrates the front-end and back-end aspects of the website.",
 		image: "/images/projects/mern-stack-react-jobs.png",
+		alt: "project image",
 		tag: ["All", "Web"],
 		gitUrl: "www.zakari.netlify.app",
 		previewUrl: "www.zakari.netlify.app",
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "E-commerce Application",
 		description:
 			"A user-friendly web application developed using the Next.js + MERN stack implementing all the features of an online ecommerce trading platform. As at now this project is still under contruction (wip).",
 		image: "/images/projects/ecommerce.png",
+		alt: "project image",
 		tag: ["All", "Mobile"],
 		gitUrl: "www.zakari.netlify.app",
 		previewUrl: "www.zakari.netlify.app",
@@ -28,7 +30,6 @@ const projectsData = [
 
 const Projects = () => {
 	const [tag, setTag] = useState("All");
-
 	const handleTagChange = (newTag) => {
 		setTag(newTag);
 	};
@@ -68,6 +69,7 @@ const Projects = () => {
 						title={project.title}
 						description={project.description}
 						imgUrl={project.image}
+						alt={project.alt}
 						gitUrl={project.gitUrl}
 						previewUrl={project.previewUrl}
 					/>
