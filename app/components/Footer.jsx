@@ -8,7 +8,7 @@ import { RiCopyrightLine } from "react-icons/ri";
 const Footer = () => {
 	return (
 		<footer className="footer border border-t-[#33353F] border-l-transparent border-r-transparent text-white">
-			<div className="container p-12 flex justify-between align-items-lg-center flex-wrap ">
+			<div className="container p-10 flex justify-between align-items-lg-center flex-wrap ">
 				<div className="flex flex-row">
 					<span>Zakari Adamu</span>
 					<Link href="https://github.com/ZakariAdamu" target="_blank">

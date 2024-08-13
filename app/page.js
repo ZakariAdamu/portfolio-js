@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import EmailForm from "./components/EmailForm";
 import Footer from "./components/Footer";
+import Achievements from "./components/Achievements";
 // import EmailForm2 from "./components/EmailForm2";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 			<Navbar />
 			<div className="container mt-24 mx-auto px-12 py-4">
 				<Hero />
+				<Achievements />
 				<About />
 				<Projects />
 				<EmailForm />
