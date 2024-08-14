@@ -1,19 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
+// import ProjectTag from "./ProjectTag";
 
 const projectsData = [
 	{
 		id: 1,
-		title: "React Job Listings Web Application",
+		title: "Edusity University Website",
 		description:
-			"An interactive web application developed using the MERN (MongoDB, Express.js, React, Node.js) stack to incorporate comprehensive CRUD (Create, Read, Update, Delete) functionalities. This full-stack solution seamlessly integrates the front-end and back-end aspects of the website.",
-		image: "/images/projects/mern-stack-react-jobs.png",
+			"A responsive university web application developed using React to showcase some of the university information to her site visitors. The website also incorporate a form email component where users can send inquiries via email directly through the website.",
+		image: "/images/projects/Edusity-webpage.png",
 		alt: "project image",
 		tag: ["All", "Web"],
-		gitUrl: "www.zakari.netlify.app",
-		previewUrl: "www.zakari.netlify.app",
+		gitUrl: "https://github.com/ZakariAdamu/edusity",
+		previewUrl: "https://edusity-one-mocha.vercel.app/",
 	},
 	{
 		id: 2,
@@ -30,9 +30,9 @@ const projectsData = [
 
 const Projects = () => {
 	const [tag, setTag] = useState("All");
-	const handleTagChange = (newTag) => {
-		setTag(newTag);
-	};
+	// const handleTagChange = (newTag) => {
+	// 	setTag(newTag);
+	// };
 
 	const filteredProjects = projectsData.filter((project) =>
 		project.tag.includes(tag)
@@ -46,7 +46,8 @@ const Projects = () => {
 				My Projects
 			</h2>
 			<div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-				<ProjectTag
+				{/*	<ProjectTag
+					className="opacity-0"
 					onClick={handleTagChange}
 					name="All"
 					isSelected={tag === "All"}
@@ -60,7 +61,7 @@ const Projects = () => {
 					onClick={handleTagChange}
 					name="Mobile"
 					isSelected={tag === "Mobile"}
-				/>
+				/> */}
 			</div>
 			<div className="grid md:grid-cols-2 gap-8 md:gap-12">
 				{filteredProjects.map((project) => (
