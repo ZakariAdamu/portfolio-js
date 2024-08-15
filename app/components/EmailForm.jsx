@@ -149,7 +149,8 @@ const EmailForm = () => {
 						p-2"
 						name="message"
 						cols="10"
-						rows="8"
+						rows="6"
+						required
 						placeholder="Please enter your message here..."
 						value={message}
 						onChange={(e) => setMessage(e.target.value)}
