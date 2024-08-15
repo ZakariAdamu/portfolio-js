@@ -8,8 +8,8 @@ const projectsData = [
 	{
 		id: 1,
 		title: "Edusity University Website",
-		description:
-			"A responsive university web application developed using React to showcase some of the university information to her site visitors. The website also incorporate a form email component where users can send inquiries via email directly through the website.",
+		description: "React, CSS, Web3 Forms",
+
 		image: "/images/projects/Edusity-webpage.png",
 		alt: "project image",
 		tag: ["All", "Web"],
@@ -18,14 +18,13 @@ const projectsData = [
 	},
 	{
 		id: 2,
-		title: "E-commerce Application",
-		description:
-			"A user-friendly web application developed using the Next.js + MERN stack implementing all the features of an online ecommerce trading platform. As at now this project is still under contruction (wip).",
-		image: "/images/projects/ecommerce.png",
+		title: "Portfolio web project",
+		description: "Next.js, Tailwind CSS, EmailJS",
+		image: "/images/projects/portfolio-thumbnail2.png",
 		alt: "project image",
 		tag: ["All", "Mobile"],
-		gitUrl: "www.zakari.netlify.app",
-		previewUrl: "www.zakari.netlify.app",
+		gitUrl: "https://github.com/ZakariAdamu/portfolio-js",
+		previewUrl: "https://portfolio-zakaris-projects-897ad7ca.vercel.app/",
 	},
 ];
 
@@ -85,6 +84,8 @@ const Projects = () => {
 							title={project.title}
 							description={project.description}
 							imgUrl={project.image}
+							gitUrl={project.gitUrl}
+							previewUrl={project.previewUrl}
 							alt={project.alt}
 						/>
 					</motion.li>

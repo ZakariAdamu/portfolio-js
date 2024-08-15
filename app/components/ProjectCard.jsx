@@ -2,7 +2,7 @@ import React from "react";
 import { HiMiniCodeBracket } from "react-icons/hi2";
 import { LuEye } from "react-icons/lu";
 
-const ProjectCard = ({ imgUrl, title, description }) => {
+const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 	return (
 		<div>
 			<div
@@ -11,7 +11,7 @@ const ProjectCard = ({ imgUrl, title, description }) => {
 			>
 				<div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
 					<a
-						href="https://github.com/ZakariAdamu/edusity"
+						href={gitUrl}
 						target="_blank"
 						className="h-14 w-14 mr-6 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
 					>
@@ -19,7 +19,7 @@ const ProjectCard = ({ imgUrl, title, description }) => {
 					</a>
 
 					<a
-						href="https://edusity-one-mocha.vercel.app"
+						href={previewUrl}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
