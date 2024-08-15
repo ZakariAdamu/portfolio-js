@@ -58,9 +58,9 @@ const Hero = () => {
 						<Image
 							className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
 							src="/images/Hero-image.png"
-							alt="hero image"
 							width={300}
 							height={300}
+							alt="hero image"
 						/>
 					</div>
 				</motion.div>
