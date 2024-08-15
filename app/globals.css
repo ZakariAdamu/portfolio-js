@@ -30,6 +30,13 @@ body {
 }
 
 /* ======== media queries ========= */
+@media (width <=1029px) {
+  .mesh-gradient {
+    top: 75%;
+    left: -3rem;
+  }
+}
+
 @media (width <=540px) {
   footer .container {
     flex-direction: column;
@@ -40,5 +47,10 @@ body {
 
   footer .container p {
     margin-top: 10px;
+  }
+
+  .mesh-gradient {
+    top: 75%;
+    left: -5rem;
   }
 }

@@ -12,6 +12,7 @@ const tabData = [
 				<li>Next.js</li>
 				<li>React</li>
 				<li>TypeScript</li>
+				<li>JavaScript</li>
 				<li>Node.js</li>
 				<li>Express</li>
 				<li>MongoDB</li>
@@ -51,22 +52,22 @@ const About = () => {
 	};
 	return (
 		<section className="text-white" id="about">
-			<div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+			<div className="md:grid md:grid-cols-2 gap-6 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 				<Image
 					className="rounded"
 					src="/images/about-image.png"
-					width={500}
-					height={500}
+					width={400}
+					height={400}
 				/>
 				<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
 					<h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
 					<p className="text-base lg:text-lg">
-						Full stack web developer with a passion for creating
-						interactive and responsive web applications. I have experience
-						working with Next.js, TypeScript, React, Node.js, Express,
-						MongoDB, HTML, CSS, and Git/GitHub. Am a quick learner and am always
-						looking to expand my knowledge and skill set. I am a team player and
-						ever excited to work with others to create amazing applications.
+						Full stack web developer with a passion for creating interactive and
+						responsive web applications. I have experience working with Next.js,
+						TypeScript, React, Node.js, Express, MongoDB, and Git/GitHub. Am a
+						quick learner and am always looking to expand my knowledge and skill
+						set. I am a team player and ever excited to work with others to
+						create amazing applications.
 					</p>
 					<div className="flex flex-row mt-8">
 						<TabButton

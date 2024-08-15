@@ -1,6 +1,13 @@
 "use client";
 import React from "react";
-import AnimatedNumbers from "react-animated-numbers";
+import dynamic from "next/dynamic";
+
+const AnimatedNumbers = dynamic(
+	() => {
+		return import("react-animated-numbers");
+	},
+	{ ssr: false }
+);
 
 const achievementsList = [
 	{
@@ -44,7 +51,7 @@ const Achievements = () => {
 									locale="en-US"
 									transitions={(index) => ({
 										type: "spring",
-										duration: index + 0.3,
+										tensions: 140 * (index + 1),
 									})}
 									className="text-white text-4xl font-bold"
 								/>
