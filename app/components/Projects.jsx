@@ -18,13 +18,13 @@ const projectsData = [
 	},
 	{
 		id: 2,
-		title: "Portfolio web project",
-		description: "Next.js, Tailwind CSS, EmailJS",
-		image: "/images/projects/portfolio-thumbnail2.png",
-		alt: "project image",
+		title: "Full stack Todo app",
+		description: "React, MongoDB, Node.js, Express",
+		image: "/images/projects/todo-thumbnail.png",
+		alt: "Todo app  image thumbnail",
 		tag: ["All", "Mobile"],
-		gitUrl: "https://github.com/ZakariAdamu/portfolio-js",
-		previewUrl: "https://portfolio-zakaris-projects-897ad7ca.vercel.app/",
+		gitUrl: "https://github.com/ZakariAdamu/awesome-todos",
+		previewUrl: "https://awesome-todo-app-f6iy.onrender.com/",
 	},
 ];
 
