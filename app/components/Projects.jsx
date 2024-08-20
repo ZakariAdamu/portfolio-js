@@ -7,13 +7,13 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
 	{
 		id: 1,
-		title: "Edusity University Website",
-		description: "React, CSS, Web3 Forms",
-		image: "/images/projects/Edusity-webpage.png",
-		alt: "project image",
-		tag: ["All", "Web"],
-		gitUrl: "https://github.com/ZakariAdamu/edusity",
-		previewUrl: "https://edusity-one-mocha.vercel.app/",
+		title: "Full stack React Job Opening website",
+		description: "React, MongoDB, Node.js, Express, Tailwind CSS",
+		image: "/images/projects/react-jobs-thumbnail.png",
+		alt: "React job website image thumbnail",
+		tag: ["All", "Mobile"],
+		gitUrl: "https://github.com/ZakariAdamu/react-jobs/tree/master",
+		previewUrl: "https://react-jobsf.vercel.app/",
 	},
 	{
 		id: 2,
@@ -27,13 +27,13 @@ const projectsData = [
 	},
 	{
 		id: 3,
-		title: "Full stack React Job Opening website",
-		description: "React, MongoDB, Node.js, Express",
-		image: "/images/projects/react-jobs-thumbnail.png",
-		alt: "React job website image thumbnail",
-		tag: ["All", "Mobile"],
-		gitUrl: "https://github.com/ZakariAdamu/react-jobs/tree/master",
-		previewUrl: "https://react-jobsf.vercel.app/",
+		title: "Edusity University Website",
+		description: "React, CSS, Web3 Forms",
+		image: "/images/projects/Edusity-webpage.png",
+		alt: "project image",
+		tag: ["All", "Web"],
+		gitUrl: "https://github.com/ZakariAdamu/edusity",
+		previewUrl: "https://edusity-one-mocha.vercel.app/",
 	},
 ];
 

@@ -6,7 +6,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 const Hero = () => {
 	return (
-		<section className="lg:py-16">
+		<section className=" lg:py-16">
 			<div className="grid grid-cols-1 sm:grid-cols-12">
 				<motion.div
 					initial={{ translateY: -100, opacity: 0 }}
