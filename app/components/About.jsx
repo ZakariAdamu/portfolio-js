@@ -1,8 +1,8 @@
 "use client";
-import React, { useTransition, useState } from "react";
+import React, { useTransition, useState, useRef } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
-import { motion } from "framer-motion";
+import { motion, animate, useInView } from "framer-motion";
 
 const tabData = [
 	{
@@ -46,23 +46,55 @@ const tabData = [
 const About = () => {
 	const [tab, setTab] = useState("skills");
 	const [isPending, startTransition] = useTransition();
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
 	const handleTabChange = (id) => {
 		startTransition(() => {
 			setTab(id);
 		});
 	};
+	const imageVariants = {
+		initial: { x: -100, opacity: 0 },
+		animate: { x: 1, opacity: 1 },
+	};
+
+	const aboutVariants = {
+		initial: { x: 100, opacity: 0 },
+		animate: { x: 1, opacity: 1 },
+	};
 	return (
 		<section className="text-white" id="about">
-			<div className="md:grid md:grid-cols-2 gap-6 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-				<div className="about-image">
+			<div
+				ref={ref}
+				className="md:grid md:grid-cols-2 gap-6 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
+			>
+				<motion.div
+					variants={imageVariants}
+					initial="initial"
+					animate={isInView ? "animate" : "initial"}
+					transition={{ duration: 0.45, delay: 0.45 }}
+					style={{
+						perspective: "1000px", // Adding perspective to enhance the 3D effect
+					}}
+					className="about-image"
+				>
 					<Image
 						className="rounded"
 						src="/images/about-image.png"
 						width={400}
 						height={400}
 					/>
-				</div>
-				<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+				</motion.div>
+				<motion.div
+					variants={aboutVariants}
+					initial="initial"
+					animate={isInView ? "animate" : "initial"}
+					transition={{ duration: 0.45, delay: 0.45 }}
+					style={{
+						perspective: "1000px", // Adding perspective to enhance the 3D effect
+					}}
+					className="mt-4 md:mt-0 text-left flex flex-col h-full"
+				>
 					<h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
 					<p className="text-base lg:text-lg">
 						Full stack web developer with a passion for creating interactive and
@@ -95,7 +127,7 @@ const About = () => {
 					<div className="mt-8">
 						{tabData.find((t) => t.id === tab).content}
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

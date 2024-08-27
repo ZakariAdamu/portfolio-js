@@ -3,15 +3,18 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
+import { motion, px } from "framer-motion";
 const Hero = () => {
 	return (
 		<section className=" lg:py-16">
 			<div className="grid grid-cols-1 sm:grid-cols-12">
 				<motion.div
-					initial={{ translateZ: -100, opacity: 0 }}
-					animate={{ translateZ: 1, opacity: 1 }}
+					initial={{ opacity: 0, translateY: -100 }}
+					animate={{ opacity: 1, translateY: 1 }}
 					transition={{ duration: 0.45 }}
+					style={{
+						perspective: "1000px", // Adding perspective to enhance the 3D effect
+					}}
 					className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
 				>
 					<h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
@@ -49,9 +52,12 @@ const Hero = () => {
 					</div>
 				</motion.div>
 				<motion.div
-					initial={{ translateZ: -100, opacity: 0 }}
-					animate={{ translateZ: 1, opacity: 1 }}
+					initial={{ opacity: 0, translateY: -100 }}
+					animate={{ opacity: 1, translateY: 1 }}
 					transition={{ duration: 0.45 }}
+					style={{
+						perspective: "1000px", // Adding perspective to enhance the 3D effect
+					}}
 					className="col-span-4 place-self-center mt-4 lg:mt-0"
 				>
 					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] relative">
