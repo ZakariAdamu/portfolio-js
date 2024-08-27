@@ -9,9 +9,9 @@ const Hero = () => {
 		<section className=" lg:py-16">
 			<div className="grid grid-cols-1 sm:grid-cols-12">
 				<motion.div
-					initial={{ translateY: -100, opacity: 0 }}
-					animate={{ translateY: 1, opacity: 1 }}
-					transition={{ duration: 0.35 }}
+					initial={{ translateZ: -100, opacity: 0 }}
+					animate={{ translateZ: 1, opacity: 1 }}
+					transition={{ duration: 0.45 }}
 					className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
 				>
 					<h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
@@ -36,7 +36,7 @@ const Hero = () => {
 							</button>
 						</Link>
 						<a
-							href="https://drive.google.com/file/d/1BRFzeW5y4VSI0oYH_IRyNWJB8w3YAaNY/view?usp=sharing"
+							href="https://drive.google.com/file/d/1ug2kOoTBpaAWDwVSCIQw8u5LSN58G1XZ/view?usp=sharing"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -49,9 +49,9 @@ const Hero = () => {
 					</div>
 				</motion.div>
 				<motion.div
-					initial={{ translateY: -100, opacity: 0 }}
-					animate={{ translateY: 1, opacity: 1 }}
-					transition={{ duration: 0.35 }}
+					initial={{ translateZ: -100, opacity: 0 }}
+					animate={{ translateZ: 1, opacity: 1 }}
+					transition={{ duration: 0.45 }}
 					className="col-span-4 place-self-center mt-4 lg:mt-0"
 				>
 					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] relative">
