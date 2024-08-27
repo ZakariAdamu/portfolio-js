@@ -72,7 +72,7 @@ const About = () => {
 					variants={imageVariants}
 					initial="initial"
 					animate={isInView ? "animate" : "initial"}
-					transition={{ duration: 0.45, delay: 0.45 }}
+					transition={{ duration: 0.7, delay: 0.8 }}
 					style={{
 						perspective: "1000px", // Adding perspective to enhance the 3D effect
 					}}
@@ -89,7 +89,7 @@ const About = () => {
 					variants={aboutVariants}
 					initial="initial"
 					animate={isInView ? "animate" : "initial"}
-					transition={{ duration: 0.45, delay: 0.45 }}
+					transition={{ duration: 0.9, delay: 1 }}
 					style={{
 						perspective: "1000px", // Adding perspective to enhance the 3D effect
 					}}
