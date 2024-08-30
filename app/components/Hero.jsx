@@ -32,9 +32,9 @@ const Hero = () => {
 					<p className="text-[#ADB7BE] text-base mb-6 lg:text-xl">
 						Designing Responsive & Interactive User Experiences
 					</p>
-					<div>
+					<div className="mt-14">
 						<Link href="#contact">
-							<button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 mb-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-300 text-white">
+							<button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 mb-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500  text-white hover:bg-primary-800">
 								Email Me
 							</button>
 						</Link>
