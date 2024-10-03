@@ -17,6 +17,16 @@ const projectsData = [
 	},
 	{
 		id: 2,
+		title: "ReactJS Weather app",
+		description: "React, Open_Weather_Map API",
+		image: "/images/projects/weather-pix-done.png",
+		alt: "Todo app  image thumbnail",
+		tag: ["All", "Mobile"],
+		gitUrl: "https://github.com/ZakariAdamu/SRT_PROJECT_1",
+		previewUrl: "https://weather-app-rho-eight-96.vercel.app/",
+	},
+	{
+		id: 3,
 		title: "Full stack Todo app",
 		description: "React, MongoDB, Node.js, Express",
 		image: "/images/projects/todo-thumbnail.png",
@@ -26,7 +36,7 @@ const projectsData = [
 		previewUrl: "https://awesome-todo-app-f6iy.onrender.com/",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Edusity University Website",
 		description: "React, CSS, Web3 Forms",
 		image: "/images/projects/Edusity-webpage.png",
