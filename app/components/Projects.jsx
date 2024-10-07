@@ -7,7 +7,17 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
 	{
 		id: 1,
-		title: "Full stack React Job Opening website",
+		title: "Full Stack Ecommerce Admin Dashboard",
+		description: "Next.js, React, Clerk, MongoDB, Express",
+		image: "/images/projects/Ruqiza-admin-thumbnail.png",
+		alt: "Ruqiza admin image thumbnail",
+		tag: ["All", "Mobile"],
+		gitUrl: "https://github.com/ZakariAdamu/ruqiza-admin",
+		previewUrl: "https://ruqiza-admin.vercel.app/",
+	},
+	{
+		id: 2,
+		title: "Full Stack React Jobs Board",
 		description: "React, MongoDB, Node.js, Express, Tailwind CSS",
 		image: "/images/projects/react-jobs-thumbnail.png",
 		alt: "React job website image thumbnail",
@@ -16,7 +26,7 @@ const projectsData = [
 		previewUrl: "https://react-jobsf.vercel.app/",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "ReactJS Weather app",
 		description: "React, Open_Weather_Map API",
 		image: "/images/projects/weather-pix-done.png",
@@ -24,16 +34,6 @@ const projectsData = [
 		tag: ["All", "Mobile"],
 		gitUrl: "https://github.com/ZakariAdamu/SRT_PROJECT_1",
 		previewUrl: "https://weather-app-rho-eight-96.vercel.app/",
-	},
-	{
-		id: 3,
-		title: "Full stack Todo app",
-		description: "React, MongoDB, Node.js, Express",
-		image: "/images/projects/todo-thumbnail.png",
-		alt: "Todo app  image thumbnail",
-		tag: ["All", "Mobile"],
-		gitUrl: "https://github.com/ZakariAdamu/awesome-todos",
-		previewUrl: "https://awesome-todo-app-f6iy.onrender.com/",
 	},
 	{
 		id: 4,
