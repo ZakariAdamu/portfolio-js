@@ -5,16 +5,16 @@ import ProjectCard from "./ProjectCard";
 import { animate, motion, useInView } from "framer-motion";
 
 const projectsData = [
-	{
-		id: 1,
-		title: "Full Stack Ecommerce Admin Dashboard",
-		description: "Next.js, React, Clerk, MongoDB, Express",
-		image: "/images/projects/Ruqiza-admin-thumbnail.png",
-		alt: "Ruqiza admin image thumbnail",
-		tag: ["All", "Mobile"],
-		gitUrl: "https://github.com/ZakariAdamu/ruqiza-admin",
-		previewUrl: "https://ruqiza-admin.vercel.app/",
-	},
+	// {
+	// 	id: 1,
+	// 	title: "Full Stack Ecommerce Admin Dashboard",
+	// 	description: "Next.js, React, Clerk, MongoDB, Express",
+	// 	image: "/images/projects/Ruqiza-admin-thumbnail.png",
+	// 	alt: "Ruqiza admin image thumbnail",
+	// 	tag: ["All", "Mobile"],
+	// 	gitUrl: "https://github.com/ZakariAdamu/ruqiza-admin",
+	// 	previewUrl: "https://ruqiza-admin.vercel.app/",
+	// },
 	{
 		id: 2,
 		title: "Full Stack React Jobs Board",
