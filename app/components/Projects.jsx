@@ -16,6 +16,17 @@ const projectsData = [
 	// 	previewUrl: "https://ruqiza-admin.vercel.app/",
 	// },
 	{
+		id: 1,
+		title: "Full Stack Ecommerce Website with Admin Dashboard",
+		description:
+			"Next.js, Stripe payment gateway with webhooks, MongoDB, Express",
+		image: "/images/projects/Ruqiza-store-thumbnail.png",
+		alt: "Ruqiza admin image thumbnail",
+		tag: ["All", "Mobile"],
+		gitUrl: "https://github.com/ZakariAdamu/SRT_PROJECT_2",
+		previewUrl: "https://ruqiza-store.vercel.app",
+	},
+	{
 		id: 2,
 		title: "Full Stack React Jobs Board",
 		description: "React, MongoDB, Node.js, Express, Tailwind CSS",
