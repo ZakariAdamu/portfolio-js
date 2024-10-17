@@ -30,7 +30,7 @@ const Hero = () => {
 						/>
 					</h1>
 					<p className="text-[#ADB7BE] text-base mb-6 lg:text-xl">
-						Designing Responsive & Interactive User Experiences
+						...Designing Responsive & Interactive User Experiences
 					</p>
 					<div className="mt-14">
 						<Link href="#contact">
@@ -60,7 +60,7 @@ const Hero = () => {
 					}}
 					className="col-span-4 place-self-center mt-4 lg:mt-0"
 				>
-					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] relative">
+					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] relative animate-bounce-infinite">
 						<Image
 							className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
 							src="/images/projects/Hero-image.png"

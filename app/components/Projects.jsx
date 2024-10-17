@@ -7,7 +7,7 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
 	{
 		id: 1,
-		title: "Full Stack Ecommerce Website with Admin Dashboard",
+		title: "Full Stack Ecommerce with Stripe Payment Integration",
 		description: "Next.js, Stripe payment with webhooks, MongoDB, Express",
 		image: "/images/projects/Ruqiza-store-thumbnail.png",
 		alt: "Ruqiza admin image thumbnail",
