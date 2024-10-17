@@ -5,21 +5,10 @@ import ProjectCard from "./ProjectCard";
 import { animate, motion, useInView } from "framer-motion";
 
 const projectsData = [
-	// {
-	// 	id: 1,
-	// 	title: "Full Stack Ecommerce Admin Dashboard",
-	// 	description: "Next.js, React, Clerk, MongoDB, Express",
-	// 	image: "/images/projects/Ruqiza-admin-thumbnail.png",
-	// 	alt: "Ruqiza admin image thumbnail",
-	// 	tag: ["All", "Mobile"],
-	// 	gitUrl: "https://github.com/ZakariAdamu/ruqiza-admin",
-	// 	previewUrl: "https://ruqiza-admin.vercel.app/",
-	// },
 	{
 		id: 1,
 		title: "Full Stack Ecommerce Website with Admin Dashboard",
-		description:
-			"Next.js, Stripe payment gateway with webhooks, MongoDB, Express",
+		description: "Next.js, Stripe payment with webhooks, MongoDB, Express",
 		image: "/images/projects/Ruqiza-store-thumbnail.png",
 		alt: "Ruqiza admin image thumbnail",
 		tag: ["All", "Mobile"],
@@ -28,6 +17,16 @@ const projectsData = [
 	},
 	{
 		id: 2,
+		title: "Full Stack Ecommerce Admin Dashboard",
+		description: "Next.js, Stripe payment, Clerk, MongoDB, Express",
+		image: "/images/projects/admin-dashboard-pix.png",
+		alt: "Ruqiza admin image thumbnail",
+		tag: ["All", "Mobile"],
+		gitUrl: "https://github.com/ZakariAdamu/ruqiza-admin",
+		previewUrl: "https://ruqiza-admin.vercel.app/",
+	},
+	{
+		id: 3,
 		title: "Full Stack React Jobs Board",
 		description: "React, MongoDB, Node.js, Express, Tailwind CSS",
 		image: "/images/projects/react-jobs-thumbnail.png",
@@ -37,7 +36,7 @@ const projectsData = [
 		previewUrl: "https://react-jobsf.vercel.app/",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "ReactJS Weather app",
 		description: "React, Open_Weather_Map API",
 		image: "/images/projects/weather-pix-done.png",
@@ -47,7 +46,7 @@ const projectsData = [
 		previewUrl: "https://weather-app-rho-eight-96.vercel.app/",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Edusity University Website",
 		description: "React, CSS, Web3 Forms",
 		image: "/images/projects/Edusity-webpage.png",
