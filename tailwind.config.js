@@ -16,12 +16,13 @@ module.exports = {
 			},
 			keyframes: {
 				bounce: {
-					"0%, 100%": { transform: "translateY(0)" },
-					"50%": { transform: "translateY(-25%)" },
+					"0%": { transform: "translateY(0)" },
+					"50%": { transform: "translateX(5%)" },
+					"100%": { transform: "translateY(-2%)" },
 				},
 			},
 			animation: {
-				"bounce-infinite": "bounce 4s infinite",
+				"bounce-infinite": "bounce 10s infinite",
 			},
 		},
 		colors: {
