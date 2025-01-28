@@ -4,6 +4,7 @@ import GitHubIcon from "/public/social-icons/logo-github-svgrepo-com.svg";
 import LinkedinIcon from "/public/social-icons/linkedin-logo-svgrepo-com.svg";
 import Image from "next/image";
 import { RiCopyrightLine } from "react-icons/ri";
+import CurrentTimeDisplay from "./CurrentTimeDisplay";
 
 const Footer = () => {
 	return (
@@ -33,9 +34,12 @@ const Footer = () => {
 						/>
 					</Link>
 				</div>
-				<p className="text-slate-500 flex justify-center align-items-center ">
+				{/* <p className="text-slate-500 flex justify-center align-items-center ">
 					<RiCopyrightLine className="m-1" />
-					2024 <span className="pl-2"> All rights reserved.</span>
+					2024 <span className="pl-2"> All rights reserved. </span>
+				</p> */}
+				<p className="text-slate-500 flex justify-center align-items-center ">
+					<CurrentTimeDisplay />
 				</p>
 			</div>
 		</footer>

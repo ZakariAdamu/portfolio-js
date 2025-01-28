@@ -7,8 +7,8 @@ import { animate, motion, useInView } from "framer-motion";
 const projectsData = [
 	{
 		id: 1,
-		title: "Full Stack Ecommerce with Stripe Payment Integration",
-		description: "Next.js, Stripe payment with webhooks, MongoDB, Express",
+		title: "Full Stack Ecommerce Web App",
+		description: "Responsive UI with NextJS and TypeScript, payment gateway",
 		image: "/images/projects/Ruqiza-store-thumbnail.png",
 		alt: "Ruqiza admin image thumbnail",
 		tag: ["All", "Mobile"],
@@ -18,7 +18,7 @@ const projectsData = [
 	{
 		id: 2,
 		title: "Full Stack Ecommerce Admin Dashboard",
-		description: "Next.js, Stripe payment, Clerk, MongoDB, Express",
+		description: "NextJS, TypeScript, MongoDB and Express",
 		image: "/images/projects/admin-dashboard-pix.png",
 		alt: "Ruqiza admin image thumbnail",
 		tag: ["All", "Mobile"],
@@ -35,16 +35,16 @@ const projectsData = [
 		gitUrl: "https://github.com/ZakariAdamu/react-jobs/tree/master",
 		previewUrl: "https://react-jobsf.vercel.app/",
 	},
-	{
-		id: 4,
-		title: "ReactJS Weather app",
-		description: "React, Open_Weather_Map API",
-		image: "/images/projects/weather-pix-done.png",
-		alt: "Todo app  image thumbnail",
-		tag: ["All", "Mobile"],
-		gitUrl: "https://github.com/ZakariAdamu/SRT_PROJECT_1",
-		previewUrl: "https://weather-app-rho-eight-96.vercel.app/",
-	},
+	// {
+	// 	id: 4,
+	// 	title: "ReactJS Weather app",
+	// 	description: "React, Open_Weather_Map API",
+	// 	image: "/images/projects/weather-pix-done.png",
+	// 	alt: "Todo app  image thumbnail",
+	// 	tag: ["All", "Mobile"],
+	// 	gitUrl: "https://github.com/ZakariAdamu/SRT_PROJECT_1",
+	// 	previewUrl: "https://weather-app-rho-eight-96.vercel.app/",
+	// },
 	{
 		id: 5,
 		title: "Edusity University Website",
@@ -70,8 +70,8 @@ const Projects = () => {
 	);
 
 	const cardVariants = {
-		initial: { y: 50, opacity: 0 },
-		animate: { y: 0, opacity: 1 },
+		initial: { x: 50, opacity: 0 },
+		animate: { x: 0, opacity: 1 },
 	};
 	return (
 		<section>

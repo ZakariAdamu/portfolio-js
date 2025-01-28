@@ -39,7 +39,7 @@ const Hero = () => {
 							</button>
 						</Link>
 						<a
-							href="https://drive.google.com/file/d/1ug2kOoTBpaAWDwVSCIQw8u5LSN58G1XZ/view?usp=sharing"
+							href="https://drive.google.com/file/d/1SbabI-x5DiHNbd6HmfSM8kxDVsNlqAII/view?usp=sharing"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
@@ -51,25 +51,25 @@ const Hero = () => {
 						</a>
 					</div>
 				</motion.div>
-				<motion.div
-					initial={{ opacity: 0, translateY: -100 }}
-					animate={{ opacity: 1, translateY: 1 }}
-					transition={{ duration: 0.45 }}
+				<div
+					// initial={{ opacity: 0, translateY: -100 }}
+					// animate={{ opacity: 1, translateY: 1 }}
+					// transition={{ duration: 0.45 }}
 					style={{
 						perspective: "1000px", // Adding perspective to enhance the 3D effect
 					}}
 					className="col-span-4 place-self-center mt-4 lg:mt-0"
 				>
-					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] relative animate-bounce-infinite">
+					<div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] relative">
 						<Image
-							className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
+							className="absolute rounded-full"
 							src="/images/projects/Hero-image.png"
 							width={300}
 							height={300}
 							alt="hero image"
 						/>
 					</div>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);
