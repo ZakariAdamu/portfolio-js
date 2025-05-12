@@ -12,8 +12,8 @@ const projectsData = [
 		image: "/images/projects/Ruqiza-store-thumbnail.png",
 		alt: "Ruqiza admin image thumbnail",
 		tag: ["All", "Mobile"],
-		gitUrl: "https://github.com/ZakariAdamu/SRT_PROJECT_2",
-		previewUrl: "https://ruqiza-store.vercel.app",
+		gitUrl: "https://github.com/ZakariAdamu/ruqiza_store",
+		previewUrl: "https://ruqizastore2025.vercel.app/",
 	},
 	{
 		id: 2,
