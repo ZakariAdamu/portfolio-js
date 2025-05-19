@@ -70,8 +70,10 @@ const Projects = () => {
 	);
 
 	const cardVariants = {
-		initial: { x: 50, opacity: 0 },
-		animate: { x: 0, opacity: 1 },
+		initial: { y: 30, opacity: 0 },
+		animate: { y: 0, opacity: 1 },
+		// initial: { x: 50, opacity: 0 },
+		// animate: { x: 0, opacity: 1 },
 	};
 	return (
 		<section>

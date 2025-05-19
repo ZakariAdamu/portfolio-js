@@ -14,7 +14,7 @@ const Footer = () => {
 					<span>Zakari Adamu</span>
 					<Link href="https://github.com/ZakariAdamu" target="_blank">
 						<Image
-							className="rounded-full bg-gray-300 mx-4 hover:bg-gray-500 hover:-translate-y-1"
+							className="rounded-full bg-gray-300 mx-4 hover:bg-gray-500"
 							width={20}
 							height={20}
 							src={GitHubIcon}
@@ -26,7 +26,7 @@ const Footer = () => {
 						target="_blank"
 					>
 						<Image
-							className="rounded bg-gray-300 p-1 hover:bg-gray-500 hover:-translate-y-1"
+							className="rounded bg-gray-300 p-1 hover:bg-gray-500"
 							width={20}
 							height={20}
 							src={LinkedinIcon}
