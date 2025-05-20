@@ -76,9 +76,9 @@ const Projects = () => {
 		// animate: { x: 0, opacity: 1 },
 	};
 	return (
-		<section>
+		<section className="w-full">
 			<h2
-				className="text-center text-4xl font-bold text-white mt-4 mb-6 md:mb-12"
+				className="text-center text-2xl md:text-4xl font-bold text-white mt-4 mb-6 md:mb-8"
 				id="projects"
 			>
 				My Projects
@@ -108,7 +108,7 @@ const Projects = () => {
 						variants={cardVariants}
 						initial="initial"
 						animate={isInView ? "animate" : "initial"}
-						transition={{ duration: 0.3, delay: index * 1 }}
+						transition={{ duration: 0.2, delay: index * 1 }}
 					>
 						<ProjectCard
 							key={project.id}

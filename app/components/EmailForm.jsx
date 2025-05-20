@@ -48,11 +48,11 @@ const EmailForm = () => {
 
 	return (
 		<section
-			className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+			className="w-[99%] zmd:w-[90vw] zmax-w-[100%] grid md:grid-cols-2 my-12 mx-auto zmd:my-12 py-24 gap-1 relative"
 			id="contact"
 		>
 			<div className="mesh-gradient bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-2/3 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-			<div className="z-10">
+			<div className="z-10 md:px-2">
 				<h5 className="text-xl font-bold text-white my-2">
 					Let&apos;s connect
 				</h5>
@@ -86,7 +86,7 @@ const EmailForm = () => {
 					</Link>
 				</div>
 			</div>
-			<form onSubmit={handleSubmit} className="flex flex-col ">
+			<form onSubmit={handleSubmit} className="flex flex-col md:px-2">
 				<ToastContainer className="w-full" />
 				<div className="name-field mb-6">
 					<label
@@ -96,7 +96,7 @@ const EmailForm = () => {
 						Name
 					</label>
 					<input
-						className="bg-[#18191E] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#3f424e] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="text"
 						placeholder="Please enter your name"
 						defaultValue={name}
@@ -112,7 +112,7 @@ const EmailForm = () => {
 						Email
 					</label>
 					<input
-						className="bg-[#18191E] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#3f424e] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
 						placeholder="Please enter your email"
 						value={email}
@@ -128,7 +128,7 @@ const EmailForm = () => {
 						Confirm Email
 					</label>
 					<input
-						className="bg-[#18191E] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#3f424e] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
 						placeholder="Please verify your email"
 						value={confirmEmail}
@@ -144,7 +144,7 @@ const EmailForm = () => {
 						Message
 					</label>
 					<textarea
-						className="bg-[#18191E] border border-[#33353F]
+						className="bg-[#3f424e] border border-[#33353F]
 						placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full
 						p-2"
 						name="message"

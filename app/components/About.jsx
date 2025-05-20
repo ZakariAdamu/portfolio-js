@@ -63,10 +63,10 @@ const About = () => {
 		animate: { x: 1, opacity: 1 },
 	};
 	return (
-		<section className="text-white mt-6 h-full" id="about">
+		<section className="text-white mt-6 h-full">
 			<div
 				ref={ref}
-				className="md:grid md:grid-cols-2 gap-6 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16"
+				className="grid md:grid-cols-2 gap-6 items-center py-8 zpx-4 xl:gap-16 sm:py-16 xl:px-16"
 			>
 				<motion.div
 					variants={imageVariants}
@@ -76,7 +76,7 @@ const About = () => {
 					style={{
 						perspective: "1000px", // Adding perspective to enhance the 3D effect
 					}}
-					className="about-image"
+					className=""
 				>
 					<Image
 						className="rounded"
@@ -96,12 +96,15 @@ const About = () => {
 					className="mt-4 md:mt-0 text-left flex flex-col h-full"
 				>
 					<h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-					<p className="text-base lg:text-lg">
-						Experienced Full-stack developer with passion for
-						creating interactive and responsive user experiences. I have experience working with Next.js, TypeScript, React, Node.js, Express, and MongoDB. I am a quick learner, always seeking to expand
-						my knowledge and skills. I am a team player, open to working with others to create amazing software solutions.
+					<p className="text-base pr-4 lg:text-lg">
+						Experienced Full-stack developer with passion for creating
+						interactive and responsive user experiences. I have experience
+						working with Next.js, TypeScript, React, Node.js, Express, and
+						MongoDB. I am a quick learner, always seeking to expand my knowledge
+						and skills. I am a team player, open to working with others to
+						create amazing software solutions.
 					</p>
-					<div className="flex flex-row mt-8">
+					<div className="flex gap-[12px] flex-row mt-8">
 						<TabButton
 							selectTab={() => handleTabChange("skills")}
 							active={tab === "skills"}
