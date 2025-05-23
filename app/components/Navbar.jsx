@@ -28,7 +28,7 @@ const navLinks = [
 const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 	return (
-		<nav className="fixed w-[90%] mx-auto max-w-[1280px] zcontainer px-0 top-0 left-0 right-0 z-20 bg-[#121212] bg-opacity-100 border border-b-[#515463] border-x-0">
+		<nav className="fixed w-[90%] mx-auto max-w-[1280px] zcontainer px-0 top-0 left-0 right-0 z-20 bg-[#121212] bg-opacity-100 border border-b-[#515463] border-x-0 overflow-x-hidden">
 			<div className="flex lg:py-4 items-center justify-between px-4 py-4">
 				<Link
 					href={"/"}

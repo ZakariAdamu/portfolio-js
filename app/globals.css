@@ -16,17 +16,19 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: #121212;
-  /* background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
   overflow-y: scroll;
   overflow-x: hidden;
-  width: 100vw;
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1380px;
   margin: 0 auto;
+  padding-inline: 16px;
 }
 
 @layer utilities {

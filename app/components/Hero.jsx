@@ -41,7 +41,6 @@ const Hero = () => {
 						<a
 							href="https://drive.google.com/file/d/1SbabI-x5DiHNbd6HmfSM8kxDVsNlqAII/view?usp=sharing"
 							target="_blank"
-							rel="noopener noreferrer"
 						>
 							<button className="px-1 py-1 w-full sm:w-fit rounded-full text-white   bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800">
 								<span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">

@@ -1,4 +1,4 @@
-import EmailForm from "../components/EmailForm";
+import EmailForm from "../components/Contact";
 
 const ContactPage = () => {
 	return (

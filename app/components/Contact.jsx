@@ -8,7 +8,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const EmailForm = () => {
+const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [confirmEmail, setConfirmEmail] = useState("");
@@ -96,8 +96,9 @@ const EmailForm = () => {
 						Name
 					</label>
 					<input
-						className="bg-[#3f424e] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="text"
+						id="name"
 						placeholder="Please enter your name"
 						defaultValue={name}
 						onChange={(e) => setName(e.target.value)}
@@ -112,24 +113,26 @@ const EmailForm = () => {
 						Email
 					</label>
 					<input
-						className="bg-[#3f424e] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
 						placeholder="Please enter your email"
 						value={email}
+						id="email"
 						onChange={(e) => setEmail(e.target.value)}
 						required
 					/>
 				</div>
 				<div className="confirm-email-field mb-6">
 					<label
-						htmlFor="email"
+						htmlFor="confirm-email"
 						className="text-white mb-2 block text-sm font-medium"
 					>
 						Confirm Email
 					</label>
 					<input
-						className="bg-[#3f424e] border border-[#33353F] placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
+						id="confirm-email"
 						placeholder="Please verify your email"
 						value={confirmEmail}
 						onChange={(e) => setConfirmEmail(e.target.value)}
@@ -145,9 +148,10 @@ const EmailForm = () => {
 					</label>
 					<textarea
 						className="bg-[#3f424e] border border-[#33353F]
-						placeholder-[#606366] text-gray-100 text-sm rounded-lg block w-full
+						placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full
 						p-2"
 						name="message"
+						id="message"
 						cols="10"
 						rows="6"
 						required
@@ -167,4 +171,4 @@ const EmailForm = () => {
 	);
 };
 
-export default EmailForm;
+export default Contact;
