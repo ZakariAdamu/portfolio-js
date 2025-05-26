@@ -26,9 +26,9 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
-  max-width: 1380px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-inline: 16px;
+  /* padding-inline: 16px; */
 }
 
 @layer utilities {
@@ -47,16 +47,16 @@ body {
 }
 
 @media (width <=540px) {
-  footer .container {
+  /* footer .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-  }
+  } */
 
-  footer .container p {
+  /* footer .container p {
     margin-top: 10px;
-  }
+  } */
 
   .mesh-gradient {
     top: 75%;

@@ -2,7 +2,7 @@ import EmailForm from "../components/Contact";
 
 const ContactPage = () => {
 	return (
-		<div className="flex w-[99%] zmin-h-[88.47vh] zw-[100%] flex-col justify-center mx-auto bg-[#121212] px-[32px] zpt-[92px]">
+		<div className="flex w-[99%] flex-col justify-center mx-auto bg-[#121212] px-[32px]">
 			<EmailForm />
 		</div>
 	);

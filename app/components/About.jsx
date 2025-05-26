@@ -66,7 +66,7 @@ const About = () => {
 		<section className="text-white mt-6 h-full px-[20px]">
 			<div
 				ref={ref}
-				className="grid md:grid-cols-2 gap-6 items-center py-8 zpx-4 xl:gap-16 sm:py-16 xl:px-16"
+				className="grid md:grid-cols-2 gap-6 items-center py-8 xl:gap-16 sm:py-16"
 			>
 				<motion.div
 					variants={imageVariants}

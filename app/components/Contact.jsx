@@ -48,7 +48,7 @@ const Contact = () => {
 
 	return (
 		<section
-			className="w-[99%] zmd:w-[90vw] zmax-w-[100%] grid md:grid-cols-2 my-12 mx-auto zmd:my-12 py-24 gap-1 relative"
+			className="w-[99%] grid md:grid-cols-2 my-12 mx-auto zmd:my-12 py-24 gap-1 relative"
 			id="contact"
 		>
 			<div className="mesh-gradient bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-2/3 -left-4 transform -translate-x-1/2 -translate-1/2"></div>

@@ -76,12 +76,12 @@ const Projects = () => {
 		// animate: { x: 0, opacity: 1 },
 	};
 	return (
-		<section className="w-full">
+		<section className="w-[99%]">
 			<h2
-				className="text-center text-2xl md:text-4xl font-bold text-white mt-4 mb-6 md:mb-8"
+				className="text-center text-2xl md:text-4xl font-bold text-white mt-4 mb-4 md:mb-8"
 				id="projects"
 			>
-				My Projects
+				Projects
 			</h2>
 			<div className="text-white flex flex-row justify-center items-center gap-2 py-6">
 				{/*	<ProjectTag

@@ -7,9 +7,9 @@ import CurrentTimeDisplay from "./CurrentTimeDisplay";
 
 const Footer = () => {
 	return (
-		<footer className="footer w-[92%] mx-auto mt-6 bg-[#121212] border border-t-[#515463] border-b-0 border-l-transparent border-r-transparent text-white overflow-x-hidden">
-			<div className="px-10 py-4 flex justify-between align-items-lg-center flex-wrap">
-				<div className="flex flex-row text-slate-400">
+		<footer className="footer w-[100%] px-4 lg:px-12 mx-auto mt-6 bg-[#121212] border-t border-t-[#515463] text-white overflow-x-hidden">
+			<div className="py-4 flex justify-between items-center">
+				<div className="flex text-slate-400">
 					<span>Zakari Adamu</span>
 					<Link href="https://github.com/ZakariAdamu" target="_blank">
 						<Image
