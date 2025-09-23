@@ -81,6 +81,7 @@ const About = () => {
 					<Image
 						className="rounded"
 						src="/images/about-image.png"
+						alt="about image"
 						width={400}
 						height={400}
 					/>

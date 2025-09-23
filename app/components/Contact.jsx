@@ -99,7 +99,7 @@ const Contact = () => {
 						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="text"
 						id="name"
-						placeholder="Please enter your name"
+						placeholder="Name"
 						defaultValue={name}
 						onChange={(e) => setName(e.target.value)}
 						required
@@ -115,7 +115,7 @@ const Contact = () => {
 					<input
 						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
-						placeholder="Please enter your email"
+						placeholder="Email"
 						value={email}
 						id="email"
 						onChange={(e) => setEmail(e.target.value)}
@@ -133,7 +133,7 @@ const Contact = () => {
 						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
 						id="confirm-email"
-						placeholder="Please verify your email"
+						placeholder="Verify email"
 						value={confirmEmail}
 						onChange={(e) => setConfirmEmail(e.target.value)}
 						required
@@ -147,7 +147,7 @@ const Contact = () => {
 						Message
 					</label>
 					<textarea
-						className="bg-[#3f424e] border border-[#33353F]
+						className="bg-[#2b2e36] border border-[#33353F]
 						placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full
 						p-2"
 						name="message"
@@ -155,7 +155,7 @@ const Contact = () => {
 						cols="10"
 						rows="6"
 						required
-						placeholder="Please enter your message here..."
+						placeholder="Message"
 						value={message}
 						onChange={(e) => setMessage(e.target.value)}
 					></textarea>

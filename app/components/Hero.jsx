@@ -23,7 +23,12 @@ const Hero = () => {
 						</span>
 						<br />
 						<TypeAnimation
-							sequence={["Zakari Adamu", 1000, "React Web Developer", 1000]}
+							sequence={[
+								"Zakari Adamu",
+								1000,
+								"Creative Software Engineer",
+								1000,
+							]}
 							wrapper="span"
 							speed={50}
 							repeat={Infinity}
@@ -39,7 +44,7 @@ const Hero = () => {
 							</button>
 						</Link>
 						<a
-							href="https://drive.google.com/file/d/1SbabI-x5DiHNbd6HmfSM8kxDVsNlqAII/view?usp=sharing"
+							href="https://drive.google.com/file/d/1cmVOqhcehwH5-F8H0QeMUUIa5LlQOt6R/view?usp=sharing"
 							target="_blank"
 						>
 							<button className="px-1 py-1 w-full sm:w-fit rounded-full text-white   bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800">
