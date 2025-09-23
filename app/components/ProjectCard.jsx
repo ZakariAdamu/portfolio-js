@@ -1,18 +1,35 @@
+import Link from "next/link";
 import { HiMiniCodeBracket } from "react-icons/hi2";
 import { LuEye } from "react-icons/lu";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+	const handleImageClick = () => {
+		if (previewUrl) {
+			window.open(previewUrl, "_blank", "noopener,noreferrer");
+		}
+	};
+
 	return (
 		<div className="md:mb-12">
 			<div
-				className="h-52 md:h-72 lg:h-96 rounded-t-xl relative group"
+				className="h-52 md:h-72 lg:h-96 rounded-t-xl relative group cursor-pointer"
 				style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
+				onClick={handleImageClick}
+				role="button"
+				tabIndex={0}
+				onKeyPress={(e) => {
+					if (e.key === "Enter" || e.key === " ") handleImageClick();
+				}}
 			>
-				<div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-60 transition-all duration-500">
+				<div
+					className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-60 transition-all duration-500"
+					onClick={(e) => e.stopPropagation()}
+				>
 					<a
 						href={gitUrl}
 						target="_blank"
 						className="h-14 w-14 mr-6 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+						onClick={(e) => e.stopPropagation()}
 					>
 						<HiMiniCodeBracket className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
 					</a>
@@ -22,6 +39,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+						onClick={(e) => e.stopPropagation()}
 					>
 						<LuEye className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white" />
 					</a>

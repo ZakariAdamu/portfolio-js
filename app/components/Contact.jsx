@@ -96,7 +96,7 @@ const Contact = () => {
 						Name
 					</label>
 					<input
-						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#2b2e36] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="text"
 						id="name"
 						placeholder="Name"
@@ -113,7 +113,7 @@ const Contact = () => {
 						Email
 					</label>
 					<input
-						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#2b2e36] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
 						placeholder="Email"
 						value={email}
@@ -130,7 +130,7 @@ const Contact = () => {
 						Confirm Email
 					</label>
 					<input
-						className="bg-[#3f424e] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+						className="bg-[#2b2e36] border border-[#33353F] placeholder-[#6e7275] text-gray-100 text-sm rounded-lg block w-full p-2.5"
 						type="email"
 						id="confirm-email"
 						placeholder="Verify email"
