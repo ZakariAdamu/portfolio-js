@@ -19,7 +19,13 @@ export default function Home() {
 					<Contact />
 				</div>
 			</div>
-			{/* <div className="w-full border-t border-gray-700"></div> */}
+			{/* Full-bleed footer with top divider */}
+			{/* <div className="relative -mx-4 sm:-mx-6 lg:-mx-8">
+				<div className="bg-blue-600z border-t border-slate-600 w-screen">
+					<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					</div>
+				</div>
+			</div> */}
 			<Footer />
 		</main>
 	);

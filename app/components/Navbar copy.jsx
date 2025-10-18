@@ -13,7 +13,8 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-	const [scrollDirection, setScrollDirection] = useState(null);
+	const [scrollDirection, setScrollDirection] =
+		(useState < "up") | "down" | (null > null);
 	const [isAtTop, setIsAtTop] = useState(true);
 
 	useEffect(() => {
@@ -36,7 +37,6 @@ const Navbar = () => {
 		window.addEventListener("scroll", updateScroll);
 		return () => window.removeEventListener("scroll", updateScroll);
 	}, [setScrollDirection]);
-
 	const [navbarOpen, setNavbarOpen] = useState(false);
 
 	// Prevent background scroll when mobile menu is open
@@ -51,17 +51,21 @@ const Navbar = () => {
 		};
 	}, [navbarOpen]);
 
-	// Compute header classes: transparent at top, blurred while scrolling down, normal (no blur) when scrolling up
-	const headerClassName = `w-full fixed top-0 left-0 z-10 transition-all duration-300 ${
-		isAtTop
-			? "bg-transparent backdrop-blur-0 shadow-none"
-			: scrollDirection === "down"
-			? "bg-blue/30 backdrop-blur-md shadow-sm"
-			: "bg-transparent backdrop-blur-0 shadow-none"
-	}`;
+	// Close menu on link click (for mobile)
+	const handleLinkClick = () => setNavbarOpen(false);
 
 	return (
-		<header className={headerClassName}>
+		// <nav className="fixed w-full top-0 left-0 z-30 bg-[#121212] bg-opacity-100 border-b border-b-[#515463]">
+		// 	<div className="flex items-center justify-between px-4 py-4 lg:px-10">
+		<header
+			className={`w-full bg-gradient-to-b from-black to-purple-900 fixed top-0 left-0 z-40 transition-all duration-300 ${
+				isAtTop
+					? "bg-transparent"
+					: scrollDirection === "down"
+					? "bg-white/40 backdrop-blur-md shadow-sm"
+					: "bg-white shadow-md"
+			}`}
+		>
 			<div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
 				<Link
 					href="/"
@@ -97,11 +101,11 @@ const Navbar = () => {
 			</div>
 			{/* Mobile Overlay Menu */}
 			{navbarOpen && (
-				<div className="fixed md:hidden inset-0 bg-slate-900 bg-opacity-[0.95] z-20 flex flex-col items-center justify-center transition-all duration-300 h-screen">
+				<div className="fixed inset-0 bg-[#121212] bg-opacity-95 z-40 flex flex-col items-center justify-center transition-all duration-300">
 					{/* Close button */}
 					<button
 						onClick={() => setNavbarOpen(false)}
-						className="absolute top-6 right-6 text-slate-200 hover:text-white z-30"
+						className="absolute top-6 right-6 text-slate-200 hover:text-white z-50"
 						aria-label="Close menu"
 					>
 						<IoCloseOutline size={32} />
