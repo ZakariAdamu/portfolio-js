@@ -63,7 +63,7 @@ const About = () => {
 		animate: { x: 1, opacity: 1 },
 	};
 	return (
-		<section className="text-white mt-6 h-full px-[20px]">
+		<section className="text-white mt-6 h-full px-[20px]" id="about">
 			<div
 				ref={ref}
 				className="grid md:grid-cols-2 gap-6 items-center py-8 xl:gap-16 sm:py-16"
